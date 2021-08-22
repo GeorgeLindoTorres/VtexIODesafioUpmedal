@@ -1,0 +1,21 @@
+.sliderLayoutContainer{
+    flex-direction: column;
+}
+.paginationDotsContainer{
+    height: 30px;
+    position: relative;
+    align-items: center;
+}
+
+.paginationDot--isActive{
+    background-color: #59ff00;
+}
+
+.sliderArrows{
+    padding: 20px;
+    position: absolute;
+    bottom: -21px;
+    color: white;
+    width: 50px;
+}
+

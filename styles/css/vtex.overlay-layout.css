@@ -1,0 +1,12 @@
+.container--overlay-categoria-produtos{    
+    background-color: #424242;
+    width: 200px;
+}
+
+.trigger--overlay-categoria-produtos{
+    max-width: 120px;
+    background-color: #424242;
+    border: 1px solid #424242;
+    border-radius: 10px;
+    color: white;
+}

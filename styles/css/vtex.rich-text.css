@@ -1,0 +1,56 @@
+.container--nome-produto{
+    width: 105px;
+    padding-left: 50px;
+    font-size: 1.2em;
+}
+
+.paragraph--nome-produto{
+    color: white;
+}
+
+.paragraph--rich-text-footer-produto{
+    color: #59ff00;
+}
+
+.container--rich-text-footer-produto{
+    max-width: 100px;
+}
+
+.container--rich-frase-categoria-produtos{
+    align-items: center;
+}
+
+.paragraph--rich-frase-categoria-produtos{
+    margin: auto;
+    color: #59ff00;
+}
+
+.container--rich-categoria-produtos{
+    height: 100%;
+    align-items: center;    
+}
+
+.container--rich-categoria-produtos .paragraph,
+.container--rich-categoria-produtos .wrapper{
+    border: 0;
+}
+
+.paragraph--rich-categoria-produtos{
+    margin: auto;
+    color: white;
+    padding-left: 20px; 
+}
+
+.paragraph--rich-opcao-categoria-produtos{
+    color: white;
+}
+
+.container--rich-referencias{
+    justify-content: center;
+}
+
+.paragraph--rich-referencias{
+    margin: 0;
+    color: white;
+    font-size: 0.8em;
+}

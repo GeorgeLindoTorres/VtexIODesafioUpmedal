@@ -1,0 +1,319 @@
+{
+  "store.home": {
+    "blocks": [
+      "flex-layout.row#row-carousel",
+      "flex-layout.row#row-categoria-produtos",
+      "flex-layout.row#row-produtos1",
+      "flex-layout.row#row-produtos2",
+      "flex-layout.row#row-produtos3",
+      "flex-layout.row#row-produtos4"
+    ]
+  },
+  "flex-layout.row#row-carousel": {
+    "props": {
+      "blockClass": "row-carousel-principal"
+    },
+    "children": [
+      "slider-layout#produto-destaque"
+    ]
+  },
+  "slider-layout#produto-destaque": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrow": "desktopOnly",
+      "blockClass": "carousel-principal",
+      "fullWidth": true
+    },
+    "children": [
+      "image#produto-principal1",
+      "image#produto-principal2"
+    ]
+  },
+  "image#produto-principal1": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T205232Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=aaf155ebc88d97bc32bf0298c5e0906636a4debff173b290695cc43b96f9811a",
+      "alt": "Banner Grandes Guerreiros",
+      "maxHeight": "650",
+      "blockClass": "image-produto-principal"
+    }
+  },
+  "image#produto-principal2": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T205232Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=cec147ae515ebc44f9f141980a6841f286dd8859266a16c8a0ba4ad27ac613b9",
+      "alt": "Banner Wood Sport Festival",
+      "maxHeight": "650",
+      "blockClass": "image-produto-principal"
+    } 
+  }, //Carrosel Principal
+  "flex-layout.row#row-categoria-produtos": {
+    "props":{
+      "blockClass": "row-categoria-produtos"
+      
+    },
+    "children": [
+      "rich-text#rich-frase-categoria-produtos",
+      "overlay-trigger#overlay-categoria-produtos"
+    ]
+  },
+  "rich-text#rich-frase-categoria-produtos":{
+    "props":{
+      "blockClass": "rich-frase-categoria-produtos",
+      "text": "Você está vendo provas de"
+    }
+  },
+  "overlay-trigger#overlay-categoria-produtos": {
+    "props":{
+      "blockClass": "overlay-categoria-produtos",      
+      "width": "35%",
+      "height": "15%"
+    },
+    "children": [
+      "rich-text#rich-categoria-produtos",
+      "overlay-layout#overlay-layout-categoria-produto"
+    ]
+  },
+  "rich-text#rich-categoria-produtos":{
+    "props":{
+      "text": "Corrida...",
+      "blockClass": "rich-categoria-produtos"
+    }
+  },
+  "overlay-layout#overlay-layout-categoria-produto":{
+    "props":{
+      "placement": "bottom" 
+    },
+    "children":[
+      "rich-text#opcao1",
+      "rich-text#opcao2",
+      "rich-text#opcao3"
+    ]
+  },
+  "rich-text#opcao1":{
+    "props":{
+      "text": "Categoria 1",
+      "blockClass": "rich-opcao-categoria-produtos"
+    }
+  },
+  "rich-text#opcao2":{
+    "props":{
+      "text": "Categoria 2",
+      "blockClass": "rich-opcao-categoria-produtos"      
+    }
+  },
+  "rich-text#opcao3":{
+    "props":{
+      "text": "Categoria 3",
+      "blockClass": "rich-opcao-categoria-produtos"
+    }
+  },
+  //Escolher Categoria Produto  
+  "flex-layout.row#row-produtos1": {
+    "props": {
+      "blockClass": "row-produtos"
+    },
+    "children": [
+      "flex-layout.col#col-produto1",
+      "flex-layout.col#col-produto2"
+    ]
+  }, //Row Produto Principal 1
+  "flex-layout.row#row-produtos2": {
+    "props": {
+      "blockClass": "row-produtos"
+    },
+    "children": [
+      "flex-layout.col#col-produto3",
+      "flex-layout.col#col-produto4"
+    ]
+  }, //Row Produto Principal 2
+  "flex-layout.row#row-produtos3": {
+    "props": {
+      "blockClass": "row-produtos"
+    },
+    "children": [
+      "flex-layout.col#col-produto5",
+      "flex-layout.col#col-produto6"
+    ]
+  }, //Row Produto Principal 3
+  "flex-layout.row#row-produtos4": {
+    "props": {
+      "blockClass": "row-produtos"
+    },
+    "children": [
+      "flex-layout.col#col-produto7",
+      "flex-layout.col#col-produto8"
+    ]
+  }, //Row Produto Principal 4
+  "flex-layout.col#col-produto1": {
+    "props": {
+      "blockClass": "col-produtos"
+    },
+    "children": [
+      "flex-layout.row#row-head-produto",
+      "flex-layout.row#row-carrosel-produto",
+      "flex-layout.row#row-footer-produto"
+    ]
+  }, //Produto 1
+  "flex-layout.col#col-produto2": {
+    "props": {
+      "blockClass": "col-produtos"
+    },
+    "children": [
+      "flex-layout.row#row-head-produto",
+      "flex-layout.row#row-carrosel-produto",
+      "flex-layout.row#row-footer-produto"      
+    ]
+  }, //Produto 2
+  "flex-layout.col#col-produto3": {
+    "props": {
+      "blockClass": "col-produtos"
+    },
+    "children": [
+      "flex-layout.row#row-head-produto",
+      "flex-layout.row#row-carrosel-produto",
+      "flex-layout.row#row-footer-produto"
+    ]
+  }, //Produto 3
+  "flex-layout.col#col-produto4": {
+    "props": {
+      "blockClass": "col-produtos"
+    },
+    "children": [
+      "flex-layout.row#row-head-produto",
+      "flex-layout.row#row-carrosel-produto",
+      "flex-layout.row#row-footer-produto"
+    ]
+  }, //Produto 4
+  "flex-layout.col#col-produto5": {
+    "props": {
+      "blockClass": "col-produtos"
+    },
+    "children": [
+      "flex-layout.row#row-head-produto",
+      "flex-layout.row#row-carrosel-produto",
+      "flex-layout.row#row-footer-produto"
+    ]
+  }, //Produto 5
+  "flex-layout.col#col-produto6": {
+    "props": {
+      "blockClass": "col-produtos"
+    },
+    "children": [
+      "flex-layout.row#row-head-produto",
+      "flex-layout.row#row-carrosel-produto",
+      "flex-layout.row#row-footer-produto"
+    ]
+  }, //Produto 6
+  "flex-layout.col#col-produto7": {
+    "props": {
+      "blockClass": "col-produtos"
+    },
+    "children": [
+      "flex-layout.row#row-head-produto",
+      "flex-layout.row#row-carrosel-produto",
+      "flex-layout.row#row-footer-produto"
+    ]
+  }, //Produto 7
+  "flex-layout.col#col-produto8": {
+    "props": {
+      "blockClass": "col-produtos"
+    },
+    "children": [
+      "flex-layout.row#row-head-produto",
+      "flex-layout.row#row-carrosel-produto",
+      "flex-layout.row#row-footer-produto"
+    ]
+  } //Produto 8
+  ,
+  "flex-layout.row#row-head-produto": {
+    "props": {
+      "blockClass": "row-head-produto"
+    },
+    "children": [
+      "rich-text#nome-produto",
+      "image#ranking-produto"
+    ]
+  },
+  "rich-text#nome-produto": {
+    "props": {
+      "text": "Nome Produto",
+      "blockClass": "nome-produto"
+    }
+  },
+  "image#ranking-produto": {
+    "props": {
+      "src": "https://freesvg.org/img/16231559165-star-rating-condensed.png",
+      "blockClass": "ranking-produto"
+    }
+  },
+  "flex-layout.row#row-carrosel-produto": {
+    "children": [
+      "slider-layout#slider-produto1"
+    ]
+  },
+  "slider-layout#slider-produto1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrow": "desktopOnly",
+      "blockClass": "carousel-produtos",
+      "fullWidth": true
+    },
+    "children": [
+      "image#image-produto1",
+      "image#image-produto2"
+    ]
+  },
+  "image#image-produto1": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1627336500-01.png",
+      "blockClass": "image-produto"
+    }
+  },
+  "image#image-produto2": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1629377501-post-libra.png",
+      "blockClass": "image-produto"
+    }
+  }, 
+  "image#image-produto3": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1629141914-POST.png",
+      "blockClass": "image-produto"
+    }
+  }, 
+  //Carrosel Produto 1
+  "flex-layout.row#row-footer-produto": {
+    "props": {
+      "blockClass": "row-footer-produto"
+    },
+    "children": [
+      "rich-text#rich-valor-produto",
+      "rich-text#rich-botao-descricao"      
+    ]
+  },
+  "rich-text#rich-valor-produto": {
+    "props": {
+      "text": "R$ 199,90",
+      "blockClass": "rich-text-footer-produto"
+    }
+  },
+  "rich-text#rich-botao-descricao": {
+    "props": {
+      "text": "Descrição",
+      "blockClass": "rich-text-footer-produto"
+    }
+  }
+}

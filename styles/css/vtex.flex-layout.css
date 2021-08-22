@@ -1,0 +1,53 @@
+.flexRow--row-desktop {
+    margin: auto;
+}
+
+.flexRow--row-produtos{
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+    justify-content: space-between;
+}
+
+.flexRow-footer-main {
+    height: 70px;
+}
+
+.flexCol--col-espacamento {
+    width: 300px;
+}
+
+.flexRowContent--row-desktop {
+    margin: 0;
+    justify-content: space-between;
+}
+
+.flexRowContent--row-carousel-principal {
+    width: 950px;
+    margin: auto;
+}
+
+.flexRowContent--row-categoria-produtos{
+    width: 300px;
+    height: 35px;
+    margin: auto; 
+}
+
+.flexRow--row-categoria-produtos .stretchChildrenwidth{
+    background-color: white;
+}
+
+.flexColChild--col-produtos {
+    min-width: 450px;
+    max-width: 450px;
+    margin: auto;
+    background-color: #424242;
+}
+
+.flexRow--row-head-produto {
+    align-items: center;
+}
+
+.flexRow--row-footer-produto {
+    justify-content: flex-start;
+}

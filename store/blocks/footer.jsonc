@@ -1,0 +1,117 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"      
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer",
+      "flex-layout.row#referencias"
+    ]
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer",
+      "flex-layout.row#referencias"
+    ]
+  },
+  "flex-layout.row#footer": {
+    "props": {
+      "blockClass": "row-footer-main"
+    },
+    "children": [
+      "tab-layout#footer"
+    ]
+  },
+  "tab-layout#footer": {
+    "props": {
+      "blockClass": "list-footer",
+      "defaultActiveTabId": "footer1"
+    },
+    "children": [
+      "tab-list#footer",
+      "tab-content#footer"
+    ]
+  },
+  "tab-list#footer": {
+    "props": {
+      "blockClass": "tab-footer"
+    },
+    "children": [
+      "tab-list.item#footer1",
+      "tab-list.item#footer2",
+      "tab-list.item#footer3",
+      "tab-list.item#footer4"
+    ]
+  },
+  "tab-list.item#footer1": {
+    "props": {
+      "tabId": "list-home1",
+      "label": "Entrar",
+      "blockClass": "list-footer1"
+    }
+  },
+  "tab-list.item#footer2": {
+    "props": {
+      "tabId": "list-home2",
+      "label": "Desafios"
+    }
+  },
+  "tab-list.item#footer3": {
+    "props": {
+      "tabId": "list-home3",
+      "label": "Loja"
+    }
+  },
+  "tab-list.item#footer4": {
+    "props": {
+      "tabId": "list-home4",
+      "label": "Suporte"
+    }
+  },
+  "tab-content#footer": {
+    "children": [
+      "tab-content.item#footer1",
+      "tab-content.item#footer2",
+      "tab-content.item#footer3",
+      "tab-content.item#footer4"
+    ]
+  },
+  "tab-content.item#footer1": {
+    "props": {
+      "tabId": "list-footer1"
+    },
+    "children": []
+  },
+  "tab-content.item#footer2": {
+    "props": {
+      "tabId": "list-footer2"
+    },
+    "children": []
+  },
+  "tab-content.item#footer3": {
+    "props": {
+      "tabId": "list-footer3"
+    },
+    "children": []
+  },
+  "tab-content.item#footer4": {
+    "props": {
+      "tabId": "list-footer4"
+    },
+    "children": []
+  }, 
+  "flex-layout.row#referencias": {   
+    "children": [
+      "rich-text#rich-referencias"
+    ]
+  },
+  "rich-text#rich-referencias": {
+    "props": {
+      "text": "By George Torres",
+      "blockClass": "rich-referencias"
+    }
+  }
+}
